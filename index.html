@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Falling Sand Simulator</title>
+  <head>
+    <!-- Linking the p5.js library for sketch and p5.sound for sound features -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Meta tags for character encoding -->
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Custom fonts for styling the page -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <!-- Button to start the simulation -->
+      <button id="start" class="button" onclick="startSim()">Start</button>
+
+      <!-- Button to restart the simulation -->
+      <button id="restart" class="button" onclick="restartSketch()">Restart</button>
+      
+      <!-- Buttons to select different elements (sand, water, fire, grass) -->
+      <button id="sand" class="button" onclick="selectElement(SAND)">Sand</button>
+      <button id="water" class="button" onclick="selectElement(WATER)">Water</button>
+      <button id="fire" class="button" onclick="selectElement(FIRE)">Fire</button>
+      <button id="grass" class="button" onclick="selectElement(GRASS)">Grass</button>
+    </main>
+    
+    <!-- Linking JavaScript files: main sketch (sketch.js), rulesets for logic (rulesets.js), and smoke particles (smokeparticles.js) -->
+    <script src="sketch.js"></script>
+    <script src="rulesets.js"></script>
+    <script src="smokeparticles.js"></script>
+  </body>
+</html>
