@@ -48,10 +48,10 @@ function setup() {
 
   // Position UI elements based on canvas size
   start.style.left = width / 2 - 100 + "px";
-  sBtn.style.left = width / 6 + "px";
-  gBtn.style.left = width / 3 + "px";
-  fBtn.style.left = width / 2 + "px";
-  wBtn.style.left = (2 * width) / 3 + "px";
+  sBtn.style.left = width / 5 - 50 + "px";
+  gBtn.style.left = 2 * width / 5 - 50 + "px";
+  fBtn.style.left = 3 * width / 5 - 50 + "px";
+  wBtn.style.left = 4 * width / 5 - 50 + "px";
   restart.style.left = width / 2 - 100 + "px";
 }
 
